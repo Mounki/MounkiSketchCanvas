@@ -19,6 +19,11 @@ A React Native component for drawing by touching on both iOS and Android.
 -   High performance (See [below](#Performance). Thanks to jeanregisser)
 -   Can draw multiple canvases in the same screen.
 
+## Main Changes and readaptations for Mounki
+Since we have to draw layers on image backgrounds , the module should be able to save the background and whats drawn on it.
+To do so :
+-  On the `SketchCanvas.js` file we've added  `defaultPaths` attribute so it can contain all drawn paths.
+
 ## Installation
 
 ---
