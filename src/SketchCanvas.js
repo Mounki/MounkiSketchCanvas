@@ -63,10 +63,13 @@ class SketchCanvas extends React.Component {
 
         permissionDialogTitle: "",
         permissionDialogMessage: ""
+        defaultPaths: [],
+
     };
 
     constructor(props) {
         super(props);
+        this._pathsToProcess = this.props.defaultPaths || [];
         this._pathsToProcess = [];
         this._paths = [];
         this._path = null;
